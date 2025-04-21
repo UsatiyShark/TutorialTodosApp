@@ -10,27 +10,80 @@
 
 Подробнее - в файле guide.docx
 
-# todos
+После первого коммита производилась разработка серверной части приложения с помощью фреймворка fastify. Клиентская часть была перенесена на фреймворк Nuxt3. Ее взаимодействие с северной частью реализовано с помощью axios. Описаны следующие методы REST API: GET, POST, PUT, DELETE. Базовый URL серверного API вынесен в отдельный файл connections.ts. В качестве БД используется SQLite.
+ 
+# Nuxt Minimal Starter
 
-## Project setup
-```
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+## Setup
+
+Make sure to install dependencies:
+
+```bash
+# npm
 npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
 
-### Compiles and minifies for production
-```
+## Production
+
+Build the application for production:
+
+```bash
+# npm
 npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
